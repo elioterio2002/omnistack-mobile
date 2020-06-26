@@ -45,7 +45,7 @@ export default function Incidents(){
                 </Text>
             </View>
             <Text style={styles.title}>Bem-vindo</Text>
-            <Text style={styles.description}>Escolha um dos casos abaixo e salve o dia.</Text>
+            <Text style={styles.description}>Esse é o seu portal do aluno</Text>
             <FlatList
                 data={incidents}
                 style={styles.incidentList}
@@ -55,13 +55,13 @@ export default function Incidents(){
                 onEndReachedThreshold={0.2}
                 renderItem={({item:incident}) => (
                     <View style={styles.incident}>
-                        <Text style={styles.incidentProperty}>ONG:</Text>
+                        <Text style={styles.incidentProperty}>Senai:</Text>
                         <Text style={styles.incidentValue}>{incident.name}</Text>
 
-                        <Text style={styles.incidentProperty}>CASO:</Text>
+                        <Text style={styles.incidentProperty}>aluno</Text>
                         <Text style={styles.incidentValue}>{incident.title}</Text>
 
-                        <Text style={styles.incidentProperty}>VALOR:</Text>
+                        <Text style={styles.incidentProperty}>Professor</Text>
                         <Text style={styles.incidentValue}>
                             {
                                 Intl.NumberFormat('pt-BR',{
@@ -76,7 +76,7 @@ export default function Incidents(){
                             onPress={() => navigateToDetail(incident)}
                         >
                             <Text style={styles.detailsButtonText}>Ver mais detalhes</Text>
-                            <Feather name="arrow-right" size={16} color="#E02041" />
+                            <Feather name="arrow-right" size={16} color="blue" />
                         </TouchableOpacity>
                     </View>                    
                 )}

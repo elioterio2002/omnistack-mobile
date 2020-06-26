@@ -34,13 +34,13 @@ export default function Detail(){
                 </TouchableOpacity>
             </View>
             <View style={styles.incident}>
-                <Text style={[styles.incidentProperty, {marginTop:0}]}>ONG:</Text>
+                <Text style={[styles.incidentProperty, {marginTop:0}]}>Senai</Text>
     <Text style={styles.incidentValue}>{incident.name} de {incident.city}/{incident.uf}</Text>
 
-                <Text style={styles.incidentProperty}>CASO:</Text>
+                <Text style={styles.incidentProperty}>Aluno:</Text>
                 <Text style={styles.incidentValue}>{incident.title}</Text>
 
-                <Text style={styles.incidentProperty}>VALOR:</Text>
+                <Text style={styles.incidentProperty}>Professor:</Text>
                 <Text style={styles.incidentValue}>
                     {
                         Intl.NumberFormat('pt-BR',{
@@ -51,9 +51,9 @@ export default function Detail(){
                 </Text>
             </View>
             <View style={styles.contactBox}>
-                <Text style={styles.heroTitle}>Salve o dia!</Text>
-                <Text style={styles.heroTitle}>Seja o herói desse caso</Text>
-                <Text style={styles.heroDescription}>Entre em contato</Text>
+                <Text style={styles.heroTitle}>Notas</Text>
+                <Text style={styles.heroTitle}>Faltas</Text>
+                <Text style={styles.heroDescription}>Fale com o seu cordenador</Text>
 
                 <View style={styles.actions}>
                     <TouchableOpacity style={styles.action} onPress = {sendWhatsapp}>
